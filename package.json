@@ -4,6 +4,9 @@
   "description": "project for cypress lecture",
   "main": "index.js",
   "author": "Omri Bar-zik",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
   "license": "ISC",
   "devDependencies": {
     "cypress": "^3.4.1"
