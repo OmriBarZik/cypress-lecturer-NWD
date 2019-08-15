@@ -1,0 +1,8 @@
+{
+  "name": "cypress-teach",
+  "version": "1.0.0",
+  "description": "project for cypress lecture",
+  "main": "index.js",
+  "author": "Omri Bar-zik",
+  "license": "ISC"
+}
