@@ -5,7 +5,8 @@
   "main": "index.js",
   "author": "Omri Bar-zik",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "license": "ISC",
   "devDependencies": {
