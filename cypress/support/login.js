@@ -1,19 +1,21 @@
 /// <reference types="Cypress" />
 
-Cypress.Commands.add( 'login', ( username, password ) => {
-	cy.request( {
-		url: '/wp-login.php', // assuming you've exposed a seeds route
+function login(username, password) {
+	cy.request({
+		url: '/wp-login.php', // the login url
 		method: 'POST',
-		form: true,
+		form: true, // send the data as a form
 		headers: {
-			wordpress_test_cookie: 'WP+Cookie+check',
+			wordpress_test_cookie: 'WP+Cookie+check', // to pass the cookie check
 		},
 		body: {
-			log: username,
-			pwd: password,
+			log: username, // username
+			pwd: password, // password
 			'wp-submit': 'LogIn',
 			redirect_to: '/wp-admin/',
-			testcookie: 1,
+			testcookie: 1, // to pass the cookie check
 		},
-	} );
-} );
+	})
+}
+
+Cypress.Commands.add('login', login)
