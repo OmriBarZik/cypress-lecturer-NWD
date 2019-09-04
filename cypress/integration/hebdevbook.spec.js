@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 
 context('download book button', () => {
-  beforeEach(() => {
-    cy.visit('https://hebdevbook.com/')
+  beforeEach(() => { // run before each test
+    cy.visit('https://hebdevbook.com/') // visit te tested site
   })
 
   it('test download book button when logout', () => {
